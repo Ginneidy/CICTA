@@ -1,0 +1,116 @@
+<div class="site-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="site-section-heading">
+            <h2>Ponentes</h2>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="200">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error deleniti dolores necessitatibus
+            eligendi. Nesciunt repellendus ab voluptatibus. Minima architecto impedit eaque molestiae dicta quam. Cum
+            ducimus. Culpa distinctio aperiam</p>
+        </div>
+      </div>
+
+      <div class="row align-items-center speaker">
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-6 ml-auto">
+          <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Giovanna Estefanía Ramírez Ruiz
+          </h2>
+          <div class="bio pl-lg-5">
+            <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Ingeniera
+              Electrónica</span>
+            <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Ingeniera Electrónica de la Escuela Colombiana de
+              Ingeniería Julio Garavito. Estudiante de maestría en Desarrollo y Gerencia Integral de Proyectos. Actual
+              presidente del capítulo profesional Aerospace & Electronic Systems Society (AESS- IEEE). Investigadora y
+              desarrolladora de la primera misión espacial Colombiana a través de un satélite en Japón. Se desempeñó
+              como Ingeniera Electrónica en la Dirección de Ciencia, Tecnología e Innovación de la Fuerza Aérea
+              Colombiana, realizando diferentes proyectos de investigación, tiene reconocimientos tales como: Best Young
+              professional IEEE 2019, becada en desarrollo y enseñanza de satélites, Japón 2019. Emprendedora del año
+              2018 ' con el premio JULIO GARAVITO' y Autora del invento "Genius Pamper".</p>
+            <p data-aos="fade-right" data-aos-delay="500">
+              Sigue a Giovanna &mdash;
+              <a href="#" class="p-2"><span class="icon-facebook"></span></a>
+              <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+              <a href="#" class="p-2"><span class="icon-github"></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center speaker">
+        <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-6 ml-auto order-lg-1">
+          <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Coronel Guillermo Poveda Zamora
+          </h2>
+          <div class="bio pr-lg-5">
+            <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Web
+              Designer</span>
+            <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus. Minima
+              architecto impedit eaque molestiae dicta quam. Cum ducimus. Culpa distinctio aperiam</p>
+            <p data-aos="fade-left" data-aos-delay="500">
+              Sigue a Coronel Guillermo &mdash;
+              <a href="#" class="p-2"><span class="icon-facebook"></span></a>
+              <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+              <a href="#" class="p-2"><span class="icon-github"></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center speaker">
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-6 ml-auto">
+          <h2 class="text-white mb-4 name" data-aos="fade-right" data-aos-delay="200">Sergio Andrés Sánchez Sanjuán</h2>
+          <div class="bio pl-lg-5">
+            <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-right" data-aos-delay="300">Ingeniero
+              Electrónico</span>
+            <p class="mb-4" data-aos="fade-right" data-aos-delay="400">Sergio Andrés Sánchez Sanjuán es Ingeniero
+              Electrónico con conocimientos en ciencias espaciales. Divulgador científico en temas de astronomía y
+              futuro estudiante del posgrado en astrofísica de la Universidad Nacional Autónoma de México (UNAM). Fue
+              joven investigador de Colciencias para la misión satelital Libertad 2 en el desarrollo del sistema de
+              energía y el análisis de su órbita.</p>
+            <p data-aos="fade-right" data-aos-delay="500">
+              Sigue a Serguio Andrés &mdash;
+              <a href="#" class="p-2"><span class="icon-facebook"></span></a>
+              <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+              <a href="#" class="p-2"><span class="icon-github"></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row align-items-center speaker">
+        <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade" data-aos-delay="100">
+          <img src="images/person_4.jpg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-6 ml-auto order-lg-1">
+          <h2 class="text-white mb-4 name" data-aos="fade-left" data-aos-delay="200">Chris Mathews</h2>
+          <div class="bio pr-lg-5">
+            <span class="text-uppercase text-primary d-block mb-3" data-aos="fade-left" data-aos-delay="300">Web
+              Designer</span>
+            <p class="mb-4" data-aos="fade-left" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Natus error deleniti dolores necessitatibus eligendi. Nesciunt repellendus ab voluptatibus. Minima
+              architecto impedit eaque molestiae dicta quam. Cum ducimus. Culpa distinctio aperiam</p>
+            <p data-aos="fade-left" data-aos-delay="500">
+              Sigue a Chris &mdash;
+              <a href="#" class="p-2"><span class="icon-facebook"></span></a>
+              <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+              <a href="#" class="p-2"><span class="icon-github"></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
