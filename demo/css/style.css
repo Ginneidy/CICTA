@@ -293,6 +293,17 @@ h1, h2, h3, h4, h5,
   z-index: 1999;
   position: absolute;
   width: 100%; }
+  .shrink{
+    width: 100%;
+    transition: aal ease-in-out 0.8s;
+    background: #353535;
+    position: fixed;
+    opacity: 0.7;
+  }
+  .top{
+    width: 100%;
+    transition: aal ease-in-out 0.8s;
+  }
   .site-navbar.transparent {
     background: transparent; }
   .site-navbar.absolute {
@@ -455,6 +466,7 @@ h1, h2, h3, h4, h5,
           visibility: visible;
           opacity: 1; }
 
+          
 .site-mobile-menu {
   width: 300px;
   position: fixed;
