@@ -293,14 +293,14 @@ h1, h2, h3, h4, h5,
   z-index: 1999;
   position: absolute;
   width: 100%;
-  background: rgba(0, 0, 0, 0.993);
+  background: #1b1d24;
 }
   
   .site-navigation ul{
         margin: 2;
         padding: 0;
         list-style: none;
-        background: rgba(0, 0, 0, 0.938);
+        background: #1b1d24;
       }
   .site-navbar.transparent {
     background: transparent; }
