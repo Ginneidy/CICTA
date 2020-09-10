@@ -23,10 +23,20 @@ a {
 	}
 }
 
+p{
+	font-family: $font-family-sans-serif;
+	text-align: justify;
+}
+
+span {
+	
+	text-align: justify;
+}
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
 	font-family: $font-family-sans-serif;
+	text-align: justify;
 }
 
 .border-2 {
@@ -271,6 +281,7 @@ h1, h2, h3, h4, h5,
 	position: relative;
 	transition: .3s all ease-in-out;
 	> span {
+		text-align: justify;
 		font-size: 50px;	
 		position: absolute;
 		top: 50%;

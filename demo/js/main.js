@@ -4,6 +4,13 @@
  	once: true
  });
 
+
+    $(document).ready(function () {
+
+      $('#myModal').modal('show')
+    });
+ 
+
 jQuery(document).ready(function($) {
 
 	"use strict";

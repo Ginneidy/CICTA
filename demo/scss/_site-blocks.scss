@@ -15,6 +15,7 @@
 		}
 	}
 	h1 {
+		text-align: justify;
 		font-size: 2rem;
 		background: linear-gradient(to right, #c70039, #ff5733 70%);
 	  -webkit-background-clip: text;
@@ -41,6 +42,7 @@
 	letter-spacing: .2em;
 	position: relative;
 	> span {
+		text-align: justify;
 		position: relative;
 		z-index: 2;
 	}
@@ -198,6 +200,7 @@
 				font-size: 25px;
 			}
 			> span {
+				text-align: justify;
 				position: absolute;
 				line-height: 0;
 				top: 50%;
@@ -221,6 +224,7 @@
 
 .custom-pagination {
 	a, span {
+		text-align: justify;
 		display: inline-block;
 		width: 40px;
 		height: 40px;
