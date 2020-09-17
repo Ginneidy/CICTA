@@ -8,17 +8,17 @@
     .parallax-section {
         background-position: center top !important;
     }
-	
+
 	/* home slider */
     #slitSlider .carousel-caption h2 {
         font-size: 60px;
     }
-	
+
 	/* about us */
     .feature-desc h3 {
         margin-top: 0;
     }
-	
+
 	/* our team */
     .team-mate {
         margin-bottom: 30px;
@@ -47,12 +47,12 @@
     .client-info {
         width: 55%;
     }
-	
+
 	/* blog page */
 	.tab-post-nav li a {
 		padding: 15px 8px;
 	}
-	
+
 	/* single blog page */
     .author-bio h5 {
         margin-left: 70px;
@@ -82,7 +82,7 @@
     #nav-arrows {
         display: none;
     }
-	
+
 	/* navigation */
     .navbar-inverse .navbar-nav li a {
         padding: 20px 10px;
@@ -324,7 +324,7 @@
     #blog {
         padding-bottom: 0;
     }
-	
+
     .note {
         margin-bottom: 30px;
     }
@@ -377,11 +377,11 @@
     .post-excerpt h3 {
         font-size: 20px;
     }
-	
+
 	.post-pagination ul li {
 		margin: 0 10px 10px 0;
 	}
-	
+
     .tab-post-nav li a {
         padding: 8px 5px;
     }
@@ -431,7 +431,7 @@
     }
 
     .navbar-inverse .navbar-toggle {
-        border-color: #6CB670;
+        border-color: #ff5733;
         border-radius: 0;
     }
 
@@ -503,7 +503,7 @@
     #blog {
         padding-bottom: 0;
     }
-	
+
     .note {
         margin: 0 auto 30px;
         width: 75%;

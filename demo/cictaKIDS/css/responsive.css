@@ -215,7 +215,7 @@
         padding-bottom: 10px;
     }
     .navbar-inverse .navbar-toggle {
-        border-color: #6CB670;
+        border-color: #ff5733;
         border-radius: 0;
     }
     .navbar-inverse .navbar-toggle:hover {
@@ -241,7 +241,7 @@
         background-color: #282b34;
     }
     .navbar-inverse .navbar-nav>li>a.current, .navbar-inverse .navbar-nav>li>a:hover {
-        background-color: #6CB670;
+        background-color: #ff5733;
         border-bottom: 1px solid #fff;
         color: #fff;
     }
@@ -281,7 +281,7 @@
     .why-title-icon > span {
         float: none;
         margin: 0 auto;
-    }	
+    }
 	.why-item {
 		margin-bottom: 40px;
 	}
@@ -311,7 +311,7 @@
         width: 90%;
         position: relative;
         left: -8px;
-    }	
+    }
 	.team-mate {
 		margin: 0 auto 31px;
 		width: 80%;
@@ -432,7 +432,7 @@
         padding: 10px 0 10px 10px;
     }
     .navbar-inverse .navbar-toggle {
-        border-color: #6CB670;
+        border-color: #ff5733;
         border-radius: 0;
     }
     .navbar-inverse .navbar-toggle:hover {
@@ -456,7 +456,7 @@
     }
     .navbar-inverse .navbar-nav > li > a.current,
 	.navbar-inverse .navbar-nav > li > a:hover {
-        background-color: #6CB670 !important;
+        background-color: #ff5733 !important;
         border-bottom: 2px solid #fff;
         color: #fff;
     }

@@ -240,11 +240,13 @@
 
 #home .bg-img-1 {
 	background-image: url(../img/slides/1.jpg);
+	background-size: 70%;
 
 }
 #home .bg-img-2 {
-	background-image: url(../img/slides/2.gif);
+	background-image: url(../img/slides/BannerCICTA2020.jpeg);
+  background-size: 80%;
 }
 #home .bg-img-3 {
-	background-image: url(../img/slides/3.jpg);
+	background-image: url(../img/slides/3.gif);
 }
