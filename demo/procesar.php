@@ -4,15 +4,14 @@ if(!isset($_POST['submit'])){
     exit;
 }
 if (isset($_POST['submit'])) {
-    //This page should not be accessed directly. Need to submit the form.
-    
-    $nombre = $_GET['fname'];
-    $apellidos = $_GET['lname'];
-    $email = $_GET['email'];
-    $identificacion = $_GET['nid'];
-    $profesion = $_GET['profesión'];
-    $empresa = $_GET['empresa'];
-    $pais = $_GET['pais'];
+
+    $nombre = $_POST['fname'];
+    $apellidos = $_POST['lname'];
+    $email = $_POST['email'];
+    $identificacion = $_POST['nid'];
+    $profesion = $_POST['profesión'];
+    $empresa = $_POST['empresa'];
+    $pais = $_POST['pais'];
 
     //Validate first
     if (empty($nombre) || empty($email) || empty($apellidos) || empty($identificacion) || empty($profesion) || empty($empresa) || empty($pais)) {
