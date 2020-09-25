@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $apellidos = $_POST['lname'];
     $email = $_POST['email'];
     $identificacion = $_POST['nid'];
-    $profesion = $_POST['profesión'];
+    $profesion = $_POST['profesion'];
     $empresa = $_POST['empresa'];
     $pais = $_POST['pais'];
 
