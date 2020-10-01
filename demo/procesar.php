@@ -68,17 +68,17 @@ if (isset($_POST['submit'])) {
         $mail->isSMTP();        
         $mail->Host       = 'smtp.gmail.com';       // SMTP de gmail
         $mail->SMTPAuth   = true;                   // Enable SMTP authentication
-        $mail->Username   = '';                     // Correo del que envia, debe tener configurada la privacidad
-        $mail->Password   = '';                     // Contraseña del correo
+        $mail->Username   = 'ramaieeeud@udistrital.edu.co';                     // Correo del que envia, debe tener configurada la privacidad
+        $mail->Password   = 'ramaestudiantil2020';                     // Contraseña del correo
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;                    // TCP puerto de gmail
 
         //Recipients
-        $mail->setFrom(''); // El que envia el correo
-        $mail->addAddress(''); //El que lo recibe 
+        $mail->setFrom('ramaieeeud@udistrital.edu.co'); // El que envia el correo
+        $mail->addAddress('Rama.distrital@gmail.com'); //El que lo recibe 
 
         // Content
-        $mail->isHTML(true);                                  // Si tiene html en caso de venir de un fomrulario
+        $mail->isHTML(true);                  // Si tiene html en caso de venir de un fomrulario
         $mail->Subject = 'Incripcion a congreso'; //Asunto del correo
         $mail->Body    = "Un nuevo usuario se ha registrado: \n" .
             "Nombre: $nombre.\n" .
