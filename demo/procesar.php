@@ -1,15 +1,4 @@
 <?php
-/* Requerido para enviar correos */
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require './Enviarcorreo/Exception.php';
-require './Enviarcorreo/PHPMailer.php';
-require './Enviarcorreo/SMTP.php';
-
-// Instantiation and passing `true` enables exceptions
-$mail = new PHPMailer(true);
 if (!isset($_POST['submit'])) {
     echo "<p>Debes llenar el formulario</p>";
     exit;
@@ -22,9 +11,15 @@ if (isset($_POST['submit'])) {
     $profesion = $_POST['profesion'];
     $empresa = $_POST['empresa'];
     $pais = $_POST['pais'];
+    $check = $_POST['check'];
+    if ($check == false){
+        echo "<script>alert('Debe aceptar la utilización de datos')</script>";
+        echo "<script>setTimeout(\"location.href='congreso.html'\",800)</script>";
+        exit;
+    }
     if (empty($nombre) || empty($email) || empty($apellidos) || empty($identificacion) || empty($profesion) || empty($empresa) || empty($pais)) {
-        echo "Todos los datos son obligatorios!";
-
+        echo "<script>alert('Todos los campos son obligatorios')</script>";
+        echo "<script>setTimeout(\"location.href='congreso.html'\",900)</script>";
         exit;
     }
     function IsInjected($str)
@@ -47,54 +42,30 @@ if (isset($_POST['submit'])) {
         }
     }
     if (IsInjected($email)) {
-        echo "Email incorrecto!";
+        echo "<script>alert('Email invalido')</script>";
+        echo "<script>setTimeout(\"location.href='congreso.html'\",900)</script>";
         exit;
     }
     if (!is_numeric($identificacion)) {
-        echo "<p> Número de identificación invalido </p>";
+        echo "<script>alert('Numero de identificación invalido')</script>";
+        echo "<script>setTimeout(\"location.href='congreso.html'\",900)</script>";
         exit;
     }
-    try {
-        $mail->SMTPOptions = array(
-            'ssl' => array(
-                'verify_peer' => false,
-                'verify_peer_name' => false,
-                'allow_self_signed' => true
-            )
-        );
 
-        //Server settings
-        $mail->SMTPDebug = 0;                       //Ver errores
-        $mail->isSMTP();        
-        $mail->Host       = 'smtp.gmail.com';       // SMTP de gmail
-        $mail->SMTPAuth   = true;                   // Enable SMTP authentication
-        $mail->Username   = 'ramaieeeud@udistrital.edu.co';                     // Correo del que envia, debe tener configurada la privacidad
-        $mail->Password   = 'ramaestudiantil2020';                     // Contraseña del correo
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = 587;                    // TCP puerto de gmail
-
-        //Recipients
-        $mail->setFrom('ramaieeeud@udistrital.edu.co'); // El que envia el correo
-        $mail->addAddress('Rama.distrital@gmail.com'); //El que lo recibe 
-
-        // Content
-        $mail->isHTML(true);                  // Si tiene html en caso de venir de un fomrulario
-        $mail->Subject = 'Incripcion a congreso'; //Asunto del correo
-        $mail->Body    = "Un nuevo usuario se ha registrado: \n" .
-            "Nombre: $nombre.\n" .
-            "Apellidos: $apellidos.\n" .
-            "Email: $email.\n" .
-            "Identificación: $identificacion.\n" .
-            "profesion: $profesion.\n" .
-            "emrpesa: $empresa.\n" .
-            "pais: $pais.\n"; 
-            
-            //cuerpo
-
-        $mail->send();
-        echo "<script>alert('Inscripción realizada exitosamente')</script>";
-        echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>";
-    } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    }
+    $contenido = "
+    Nombre : $nombre
+    Email : $email
+    Nombre : $nombre
+    Apellidos : $apellidos
+    Email : $email
+    Numero de identificacion : $identificacion
+    Profesion : $profesion
+    Empresa : $empresa
+    Pais : $pais
+    \n
+    ";
+    $archivo = fopen("recibidos/inscripciones.txt","w");
+    fwrite($archivo,$contenido);
+    echo "<script>alert('Inscripción realizada exitosamente')</script>";
+    echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>";
 }
