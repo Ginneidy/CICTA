@@ -55,7 +55,6 @@ if (isset($_POST['submit'])) {
     $contenido = "
     Nombre : $nombre
     Email : $email
-    Nombre : $nombre
     Apellidos : $apellidos
     Email : $email
     Numero de identificacion : $identificacion
@@ -64,7 +63,7 @@ if (isset($_POST['submit'])) {
     Pais : $pais
     \n
     ";
-    $archivo = fopen("recibidos/inscripciones.txt","w");
+    $archivo = fopen("recibidos/inscripciones.txt","a");
     fwrite($archivo,$contenido);
     echo "<script>alert('Inscripción realizada exitosamente')</script>";
     echo "<script>setTimeout(\"location.href='index.html'\",1000)</script>";
