@@ -52,17 +52,7 @@ if (isset($_POST['submit'])) {
         exit;
     }
 
-    $contenido = "
-    Nombre : $nombre
-    Email : $email
-    Apellidos : $apellidos
-    Email : $email
-    Numero de identificacion : $identificacion
-    Profesion : $profesion
-    Empresa : $empresa
-    Pais : $pais
-    \n
-    ";
+    $contenido = "$nombre,$email,$apellidos,$email,$identificacion,$profesion,$empresa,$pais\n";
     $archivo = fopen("recibidos/inscripciones.txt","a");
     fwrite($archivo,$contenido);
     echo "<script>alert('Inscripción realizada exitosamente')</script>";
