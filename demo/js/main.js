@@ -16,6 +16,38 @@ jQuery(document).ready(function($) {
 	"use strict";
 
 	
+  /*------------------
+      Background Set
+  --------------------*/
+  $('.set-bg').each(function () {
+    var bg = $(this).data('setbg');
+    $(this).css('background-image', 'url(' + bg + ')');
+});
+/*------------------
+Hero Slider
+--------------------*/
+$('.hero__slider').owlCarousel({
+    loop: true,
+    dots: true,
+    mouseDrag: false,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    items: 1,
+    margin: 0,
+    smartSpeed: 1200,
+    autoHeight: false,
+    autoplay: true,
+});
+
+var dot = $('.hero__slider .owl-dot');
+dot.each(function () {
+    var index = $(this).index() + 1;
+    if (index < 10) {
+        $(this).html('0').append(index);
+    } else {
+        $(this).html(index);
+    }
+});
 
 	var siteMenuClone = function() {
 
@@ -245,5 +277,8 @@ jQuery(document).ready(function($) {
 
 	};
 	siteDatePicker();
+
+
+
 
 });
