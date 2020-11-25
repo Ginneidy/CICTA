@@ -34,7 +34,7 @@ $('.hero__slider').owlCarousel({
     animateIn: 'fadeIn',
     items: 1,
     margin: 0,
-    smartSpeed: 1200,
+    smartSpeed: 3000,
     autoHeight: false,
     autoplay: true,
 });
